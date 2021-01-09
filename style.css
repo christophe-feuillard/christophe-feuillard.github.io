@@ -227,6 +227,12 @@ background-size: 60%;
 background-repeat: no-repeat;
 background-position: center;
 }
+.github {
+    background-image: url(img/github.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
 .youtube {
     background-image: url(img/youtube.png);
     background-size: 70%;
@@ -325,9 +331,13 @@ filter: saturate(200%);
     background-color: rgba(187, 187, 187, 0.301);
     z-index: 3; 
     justify-content: space-around;
+ 
 }
 
-.div_section {
+
+
+.link_vers_site {
+    cursor: pointer;
     align-self: center;
     width: 40%;
     height: 60vh;
@@ -340,6 +350,13 @@ filter: saturate(200%);
     transition: 0.8s ease;
     filter: grayscale(100%);
 
+}
+
+.link_vers_site:hover {
+    width: 45%;
+    height: 90vh;
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 

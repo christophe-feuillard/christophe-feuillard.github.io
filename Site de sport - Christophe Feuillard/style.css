@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color: rgb(26, 26, 26);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*********************************************************/
+
+
+.header_parent {
+    width: 100%;
+    height: 18vh;
+    background-color: rgb(245, 245, 245);
+   box-shadow:0px 13px 8px -2px rgba(0,0,0,0.79);
+   margin-bottom: 13px;
+}
+
+header {
+    width: 60%;
+    height: 18vh;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+}
+
+.header_enfant_un {
+    width: 50%;
+    height: 18vh;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+      justify-content: flex-end;
+}
+
+#logo {
+    width: 330px;
+    height: 63px;
+    padding-left: 45px;
+}
+
+.header_un_para {
+    font-size: 25px;
+    padding-left: 45px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+
+.span_para_un {
+    color: orange;
+}
+
+.header_enfant_deux {
+    width: 50%;
+    height: 18vh;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.compte_panier {
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+
+.lien_compte_panier {
+    display: flex;
+    width: 30%;
+   justify-content: space-between;
+   text-decoration: none;
+}
+
+.lien_compte_panier_deux {
+    display: flex;
+    width: 40%;
+   justify-content: space-between;
+   text-decoration: none;
+}
+
+.p_cp {
+    align-self: center;
+    color:rgb(0, 0, 0);
+}
+
+.bonjour {
+    align-self: flex-end;
+    font-size: 25px;
+}
+
+.nav {
+    width: 80%;
+    height: 5vh;
+    background-color:rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_header_deux {
+    border-right: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacteznous {
+    border-left: 1px solid black;
+}
+
+.lien_nav_header {
+    align-self: center;
+    text-decoration: none;
+    color: black;
+}
+
+/**********************************************/
+
+#img_parent {
+    width: 100%;
+    height: 32vh;
+    background-color: rgb(26, 26, 26);
+}
+
+#img_cata_parent {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#img_cata {
+    height: 32vh;
+    width: 100%;
+    box-shadow:0px 13px 8px -2px rgba(0,0,0,0.79);
+}
+
+/***************************************************/
+
+.grand_container {
+    height: 90vh;
+    width: 100%;
+    background-color:rgb(26, 26, 26);
+}
+
+.grand_container_deux {
+    height: 90vh;
+    width: 60%;
+    margin: 0 auto;
+    background-color:rgb(102, 28, 163);
+}
+
+.grand_container_trois {
+    height: 45vh;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-around;
+}
+
+.grand_container_quatre {
+    height: 45vh;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-around;
+}
+
+.article {
+   width: 40%;
+   height: 40vh;
+   background-color: rgb(102, 28, 163);
+   align-self: center;
+   flex-direction: column;
+    
+}
+
+.section_haut {
+     height: 85%;
+     width: 100%;
+     background-color: rgb(211, 211, 211);
+}
+
+.gant2 {
+    width: 400px;
+    height: 100%;
+    z-index: 0;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.67);
+}
+
+
+
+.para_abso {
+ z-index: 1;
+ top: -10%;
+ left: 20%;
+ position: relative;
+ font-size: 14px;
+
+}
+
+.reduction {
+    z-index: 1;
+    top: -103%;
+    left: 82%;
+    position: relative;
+    height: 5vh;
+    width: 5.5vw;
+    background-color: rgb(66, 64, 64);
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    border: 3px solid black;
+
+}
+
+.reduction_span {
+    color: orange;
+    font-weight: bolder;
+    font-size: 1.8vw;
+    align-self: center;
+}
+
+.section_bas {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.voirlavente {
+    align-self: center;
+    width: 45%;
+    background-color: black;
+    color: white;
+    height: 65%;
+    display: flex;
+    justify-content: center;  
+    text-decoration: none;
+    font-size: 19px;    
+}
+
+
+
+.paragraphe_section_bas {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.sansvingt {
+    font-size: 17px;
+    text-decoration:line-through;
+    margin-right: 30px;
+    font-weight: bolder;
+}
+
+.soiscentecinq {
+    color: orange;
+    font-size: 32px;
+    align-self: center;
+    font-weight: bolder;
+}
+
+/*******************************************/
+
+.big_container_footer {
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(75, 75, 75);
+}
+
+footer {
+    width: 60%;
+    height: 30vh;
+    margin: 0 auto;
+    background-color: rgb(75, 75, 75);
+    z-index: 3;
+}
+
+.section_footer_un {
+    width: 100%;
+    height: 18vh;
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon_livre {
+    width: 55px;
+    height: 55px;
+    align-self: center;
+}
+
+.article_footer_un {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(75, 75, 75);
+    width: 20vh;
+    height: 80%;
+    align-self: flex-end;
+}
+
+.para_footer {
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.section_footer_deux {
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+}
+
+#fb,#twitter,#linkedin {
+    height: 40px;
+    height: 40px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
