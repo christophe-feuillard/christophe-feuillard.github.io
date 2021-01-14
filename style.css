@@ -31,8 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: 'Montserrat', sans-serif;
-
- 
 }
 ol, ul {
 	list-style: none;
@@ -51,6 +49,27 @@ table {
 }
 
 /**********************************************/
+
+body::-webkit-scrollbar 
+{
+    display: none;
+}
+
+#monaudio {
+    height: 30px;
+    width: 300px;
+
+}
+
+
+.site_constru {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    position: fixed;
+    opacity: 0.7;
+    
+}
 
 .background {
     width: 100%;
@@ -83,7 +102,7 @@ table {
     background-color: rgba(0, 0, 0, 0.699);
     display: flex; 
     flex-direction: column;
-    justify-content: space-around;
+    
     
 }
 
@@ -104,24 +123,26 @@ header {
     height: 18vh;
     z-index: 2; 
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.438);
+    justify-content: space-evenly;
+    background-color: rgb(27, 27, 27);
 }
 
 header span {
-    font-family: 'Bungee', cursive;
-    font-size: 50px;
-    color: rgb(219, 219, 219);
+    
+    font-size: 50px; 
+    color: rgb(26, 48, 173);
     align-self: center;
     letter-spacing: 2px;
 }
 
 .photo {
-    background-image: url("img/IMG_7443.jpg");
+    background-image: url("img/logoavecfond.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105%;
     width: 150px;
-    height: 165.24px;
+    height: 155.24px;
+    background-position: -0px;
+ 
     align-self: center;
     border-radius: 150px; 
     box-shadow:-7px -7px 20px 3px rgba(0,0,0,0.71);
@@ -135,6 +156,27 @@ header span {
   display: flex;
   box-shadow: 0px 13px 14px -3px rgba(0,0,0,0.77);
   justify-content: space-around;
+}
+
+.aproposdemoi {  
+    margin-top: 100px;
+  width: 100%;
+  height:  110.16px;
+  background-color: rgb(27, 27, 27);
+  z-index: 5; 
+  display: flex;
+  box-shadow: 0px 13px 14px -3px rgba(0,0,0,0.77);
+  justify-content: space-around;
+}
+
+#contact_ {
+    width: 100%;
+    height:  110.16px;
+    background-color: rgb(27, 27, 27);
+    z-index: 5; 
+    display: flex;
+    box-shadow: 20px 0px 10px 3px rgba(0,0,0,0.77);
+    justify-content: space-around;
 }
 
 .ptitebarre {
@@ -156,9 +198,14 @@ header span {
  
 }
 
+#boutoncopy {
+    color: rgb(255, 255, 255);
+  
+}
+
 main {
     width: 100%;
-    height: 321.3px;
+    height: 371.3px;
     opacity: 1;
    background-color: rgb(187, 187, 187);
     z-index: 2; 
@@ -170,7 +217,7 @@ main {
     font-size: 20px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 10px;
+    padding-top: 20px;
     line-height: 43px;
    
 }
@@ -187,8 +234,9 @@ main {
 
 
 .nav {
+    margin-top: 60px;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     z-index: 4;
     background-color: rgba(168, 39, 39, 0);
     display: flex;
@@ -261,6 +309,23 @@ filter: saturate(200%);
     
 }
 
+#emailspan {
+    background-color: rgb(187, 187, 187);
+    resize: none;
+    border: none;
+    width: 850px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#spannumtel {
+    background-color: rgb(187, 187, 187);
+    resize: none;
+    border: none;
+    width: 350px;
+    height: 50px;
+    overflow: hidden;
+}
 
 
 .smartphone {
@@ -277,7 +342,7 @@ filter: saturate(200%);
         width: 5vw;
         height: 5vw;
         border-radius: 7vw;
-        background-color: #0a4985;
+        background-color: #0a4a8500;
         transition: 0.5s ease;
         box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
         }
@@ -309,6 +374,30 @@ filter: saturate(200%);
     background-attachment:fixed;
 }     
 
+#copy {
+     border: none;
+    height: 45px;
+    align-self: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #0a4a8500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+#copy2 {
+    border: none;
+   height: 45px;
+   align-self: center;
+   padding: 10px;
+   border-radius: 20px;
+   background-color: #0a4a8500;
+   cursor: pointer;
+   font-size: 20px;
+   transition: 0.4s ease;
+}
+
 
 .big_container_4 {
   
@@ -327,7 +416,7 @@ filter: saturate(200%);
 .projet_section {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-color: rgba(187, 187, 187, 0.301);
     z-index: 3; 
     justify-content: space-around;
@@ -339,8 +428,8 @@ filter: saturate(200%);
 .link_vers_site {
     cursor: pointer;
     align-self: center;
-    width: 40%;
-    height: 60vh;
+    width: 20%;
+    height: 30vh;
     background-color: rgb(15, 32, 128);
     box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
     display: flex;
@@ -353,8 +442,8 @@ filter: saturate(200%);
 }
 
 .link_vers_site:hover {
-    width: 45%;
-    height: 90vh;
+    width: 25%;
+    height: 40vh;
     filter: grayscale(0%);
     opacity: 1;
 }
@@ -368,7 +457,7 @@ filter: saturate(200%);
 }
 
 .titre_section {
-        font-size: 30px;
+        font-size: 22px;
        color: rgb(219, 219, 219);
        letter-spacing: 2px;
        text-align: center;
@@ -446,18 +535,12 @@ filter: saturate(200%);
     .div_contact {
         flex-direction: column;
     }
-    .projet_section {
-        height: 400vh; 
-        flex-direction: column;
-    }
     .div_section {
         width: 95%;
         height: 95vh;
         filter: grayscale(0%);
     }
-    .big_container_3 {  
-       height: 200vh;
-   }   
+
     
    .div_section:hover {
     width: 95%;
@@ -465,23 +548,10 @@ filter: saturate(200%);
     filter: grayscale(0%);
     opacity: 1;
 }
-.big_container_4 {
-  
-    width: 100%;
-    height: 100vh;
-    z-index: 1; 
-      
-}  
-
 
 
 
  }
-
-
-
-
-
 
 
 
@@ -496,11 +566,27 @@ filter: saturate(200%);
         .ptitebarre {
           display: none;
         }
+
+   .titre_section {
+       font-size: 15px;
+   }
+
+
 }
 
 /******************************************************/
 
 @media screen and (max-width: 870px) {
+
+     #emailspan {
+     
+         margin-left:200px ;
+     }
+
+     #spannumtel {
+         margin-left: 100px;
+     }
+
     .photo {
         display: none;
     }
@@ -523,6 +609,16 @@ filter: saturate(200%);
     header span {
         font-size: 45px;
     }
+    #emailspan {
+        margin-left:50px ;
+        width: 400px;
+    }
+
+    #spannumtel {
+        margin-left: 0px;
+        width: 260px;
+        height: 35px;
+    }
 
 }
 /**************************************/
@@ -532,9 +628,28 @@ filter: saturate(200%);
     }
 
     .monemailtxt {
-        font-size: 20px;
+        font-size: 23px;
+       
        }
+
+       #emailspan {
+        margin-left:50px ;
+        width: 400px;
+    }
+
+    #spannumtel {
+        margin-left: 0px;
+        width: 260px;
+        height: 35px;
+    }
+
+
+
+
+
 }
+
+
 
 /*************************************/
 
