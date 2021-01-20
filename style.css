@@ -485,6 +485,13 @@ filter: saturate(200%);
     transition: 0.5s ease;
 }
 
+.image_section_3 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 80%;
+    align-self: center;
+}
 
 
 .projet2 {
@@ -502,13 +509,17 @@ filter: saturate(200%);
 
 }
 
-.image_section_3 {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 80%;
-    align-self: center;
+.projet4 {
+    background-image: url("img/projet4_1.jpg");
+
 }
+
+.projet4_1 {
+    background-image: url("img/projet4_2.jpg");
+
+}
+
+
 
 /****************************************************************************/
 
@@ -530,9 +541,15 @@ filter: saturate(200%);
 }
 
 @media screen and (max-width: 1400px) {
-
+    .icon_{
+        display: none;
+        }
+    .big_container_2 {
+        height: 400px;      
+    }
 
     .div_contact {
+        height: 350px;
         flex-direction: column;
     }
     .div_section {
@@ -558,9 +575,24 @@ filter: saturate(200%);
 /********************************************/
 
 @media screen and (max-width: 1200px) {
+    .link_vers_site {
+        cursor: pointer;
+        align-self: center;
+        width: 30%;
+        height: 40vh;
+        background-color: rgb(15, 32, 128);
+        box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+        border-radius: 20px;
+        transition: 0.8s ease;
+        filter: grayscale(100%);
+    
+    }
     .icon{
-        width: 7vw;
-        height: 7vw;
+        width: 9vw;
+        height: 9vw;
         border-radius: 9vw;
         }
         .ptitebarre {
@@ -577,100 +609,336 @@ filter: saturate(200%);
 /******************************************************/
 
 @media screen and (max-width: 870px) {
-
-     #emailspan {
-     
-         margin-left:200px ;
-     }
-
-     #spannumtel {
-         margin-left: 100px;
-     }
-
-    .photo {
-        display: none;
+    .link_vers_site:hover {
+        width: 30%;
+        height: 25vh;
+        filter: grayscale(0%);
+        opacity: 1;
     }
+    .link_vers_site {
+        cursor: pointer;
+        align-self: center;
+        width: 30%;
+        height: 20vh;
+        background-color: rgb(15, 32, 128);
+        box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+        border-radius: 20px;
+        transition: 0.8s ease;
+        filter: grayscale(100%);
+    
+    }
+    .projet_section {
+        display: flex;
+        width: 100%;
+        height: 30vh;
+        background-color: rgba(187, 187, 187, 0.301);
+        z-index: 3; 
+        justify-content: space-around;
+     
+    }
+    .big_container_3 {
+  
+        width: 100%;
+        height: 60vh;
+        z-index: 1; 
+        display: flex; 
+        flex-direction: column;    
+        
+        background-image: url("img/115641.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:fixed;
+    }   
+    .big_container_2 {
+        width: 100%;
+        height: 250px;
+        z-index: 1; 
+        display: flex; 
+        flex-direction: column;
+        
+    }
+    
+    #boutoncopy {
+        color: rgb(255, 255, 255);
+     
+    }
+    .div_contact {
+        width: 100%;
+        height: 250px;
+        opacity: 1;
+       background-color: rgb(187, 187, 187);
+        z-index: 2; 
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        
+    }
+
+    #spannumtel {
+        background-color: rgb(187, 187, 187);
+        resize: none;
+        border: none;
+        width: 30vw;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 4vw;
+    }
+
+    #emailspan {
+        background-color: rgb(187, 187, 187);
+        resize: none;
+        border: none;
+        width: 30vw;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 4vw;
+        margin-left: 0px;
+    }
+    .icon{
+        align-self: center;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 10vw;
+        }
+
+    .span_p_main {
+            font-size: 2.8vw;     
+        }
     .p_main {
-        font-size: 17px;
+         text-align: initial;
+        font-size: 2.4vw;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 40px;
+    }
+    main {
+        height: 550px;    
+    }
+    .aproposdemoi {  
+        margin-top: 0px;
+    }
+    header span {
+        display: none;
+       }
+    .nav {
+        margin-top: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    #spannumtel {
+        background-color: rgb(187, 187, 187);
+        resize: none;
+        border: none;
+        width: 30vw;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 4.5vw;
+    }
+
+    #emailspan {
+        background-color: rgb(187, 187, 187);
+        resize: none;
+        border: none;
+        width: 30vw;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 4.5vw;
+        margin-left: 0px;
+    }
+    
+    .photo {
+        background-size: 100%;
+        width: 120px;
+        height: 150px;
+        border-radius: 30px; 
+        box-shadow:0px 0px 0px 0px rgba(0,0,0,0.71);
+    } 
+    .aproposdemoi {  
+     margin-top: 0px;
+      height:  90px;
+    }
+    header {
+        height: 14vh;
+    }
+    .span_p_main {
+        font-size: 3.1vw;
+    }
+.p_main {
+     text-align: initial;
+    font-size: 2.8vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+}
+main {
+    height: 600px;    
+}
+
+
+
+}
+
+@media screen and (max-width: 500px) { 
+    .link_vers_site {
+        cursor: pointer;
+        align-self: center;
+        width: 40%;
+        height: 30vh;
+        background-color: rgb(15, 32, 128);
+        box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+        border-radius: 0px;
+        transition: 0.8s ease;
+        filter: grayscale(100%);
+    
+    }
+    .projet_section {
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        background-color: rgba(187, 187, 187, 0.301);
+        z-index: 3; 
+        justify-content: space-around;
+     
+    }
+    .big_container_3 {
+  
+        width: 100%;
+        height: 60vh;
+        z-index: 1; 
+        display: flex; 
+        flex-direction: column;    
+        
+        background-image: url("img/115641.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:fixed;
+    }   
+    #projet_ {
+        height: 60px;
+    }
+
+    .titre_section {
+        font-size: 12px;
+    }
+    #spannumtel {
+        background-color: rgb(187, 187, 187);
+        resize: none;
+        border: none;
+        width: 30vw;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 5vw;
+    }
+
+    #emailspan {
+        background-color: rgb(187, 187, 187);
+        resize: none;
+        border: none;
+        width: 30vw;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 5vw;
+        margin-left: 0px;
+    }
+    .photo {
+        width: 100px;
+        height: 150px;
+    } 
+    main {
+        height: 650px;    
+    }
+    .aproposdemoi {  
+        margin-top: 0px;
+      height:  80px;
+    }
+    header {
+        height: 12vh;
     }
     .aproposspan {  
-        font-size: 30px;      
+        font-size: 30px;   
    }
-   .icon{
-    width: 8vw;
-    height: 8vw;
+
+    .span_p_main {
+        font-size: 3.8vw;
+    }
+.p_main {
+     text-align: center;
+    font-size: 3.8vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+}
+.icon{
+    align-self: center;
+    width: 16vw;
+    height: 16vw;
     border-radius: 10vw;
     }
 
-}
-
-/**********************************/
-@media screen and (max-width: 740px) {
-    header span {
-        font-size: 45px;
-    }
-    #emailspan {
-        margin-left:50px ;
-        width: 400px;
-    }
-
-    #spannumtel {
-        margin-left: 0px;
-        width: 260px;
-        height: 35px;
-    }
-
-}
-/**************************************/
-@media screen and (max-width: 650px) {
-    header span {
-        font-size: 40px;
-    }
-
-    .monemailtxt {
-        font-size: 23px;
-       
-       }
-
-       #emailspan {
-        margin-left:50px ;
-        width: 400px;
-    }
-
-    #spannumtel {
-        margin-left: 0px;
-        width: 260px;
-        height: 35px;
-    }
-
-
-
-
-
-}
-
-
-
-/*************************************/
-
-@media screen and (max-width: 600px) {
-    header {
+    .big_container_2 {
         width: 100%;
-        height: 18vh;
+        height: 200px;
+        z-index: 1; 
+        display: flex; 
+        flex-direction: column;
+        
+    }
+    
+    .div_contact {
+        width: 100%;
+        height: 200px;
+        opacity: 1;
+       background-color: rgb(187, 187, 187);
         z-index: 2; 
         display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+        justify-content: space-evenly;
+        flex-direction: row;
+        
     }
 
 
 }
 
-@media screen and (max-width: 475px) {
-    .monemailtxt {
-        font-size: 16px;
-       }
+@media screen and (max-width: 430px) { 
+    #spannumtel {
+        background-color: rgb(187, 187, 187);
+        resize: none;
+        border: none;
+        width: 30vw;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 6vw;
+    }
 
+    #emailspan {
+        background-color: rgb(187, 187, 187);
+        resize: none;
+        border: none;
+        width: 30vw;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 6vw;
+        margin-left: 0px;
+    }
+    .p_main {
+        text-align: center;
+       font-size: 5vw;
+       padding-left: 10px;
+       padding-right: 10px;
+       line-height: 35px;
+   }
+   .span_p_main {
+    font-size: 5vw;
+}
 
 }
 
