@@ -1,0 +1,358 @@
+body {
+    background-image: url("fondretrofuturiste.jpg");
+    background-size: 100%;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',sans-serif;
+    margin: 0px;
+    padding: 0px; /*marge intérieur*/
+    height: 100vh;  /*viewport height*/
+    width: 100%;
+    
+}
+
+@font-face {
+  font-family: "Homelander";
+  src: url('homelander.ttf');
+ }
+
+ #logo {
+    float: left;   /*float sert à surperposer un élément sur un autre*/
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    transition: all 0.3s ease;
+}
+
+#logo:hover {/*hover = animation quand je passe ma souris sur le logo*/
+        
+-webkit-transform: scale(0.8); /*rétrécissement du logo quand je passe ma souris* (webkit chrome safari android)*/
+-ms-transform: scale(0.8); /*compatible internet explorer*/
+-moz-transform: scale(0.8); /*mozilla firefox*/
+transform: scale(0.8);
+opacity: 0.5; 
+}
+
+#ytb {
+    position: fixed;
+    width: 100px;
+    height: 77px;
+    margin-top: 5px;
+    display: inline-block;
+    background-position: 20px 23px;
+    background-image: url("ytblogo.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.4s ease;
+    opacity: 0.7;
+    z-index: 10; /*défini que mon logo youtube sera le plus devant possible*/
+}
+
+#ytb:hover {
+    border-radius: 40%;
+    filter: grayscale(0%);
+    background-color: rgba(207, 18, 18, 0.685);
+    opacity: 1;
+}
+
+#twitch {
+  background-position: 25px;
+  margin-top: 5px;
+  margin-left: 100px;
+  position: fixed;
+  width: 100px;
+  height: 77px;
+  display: inline-block;
+  background-image: url("ytblogo.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.4s ease;
+  opacity: 1;
+  z-index: 10;
+  background-image: url("twitchlogo.png");
+}
+
+#twitch:hover {
+  border-radius: 40%;
+  filter: grayscale(0%);
+  background-color: rgba(135, 18, 182, 0.685);
+  opacity: 1;
+}
+
+nav { /*MENU*/
+   position: fixed;
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+    border-top: 5px solid rgba(92, 92, 97, 0.5);
+    border-bottom: 5px solid rgba(83, 83, 90, 0.5);
+    z-index: 10;
+}
+
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden; /* pour cacher les éléments qui dépassent*/
+}
+
+nav li {
+    list-style-type: none;
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-utiliseruneinstru{
+    display: inline-block;
+    padding: 27px 40px;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+.menu-drumkit{
+  display: inline-block;
+  padding: 27px 40px;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.menu-apropos{
+    display: inline-block;
+    padding: 27px 40px;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+.menu-drumkit:hover{
+  background-color: rgba(187, 182, 182, 0.2);
+  
+}
+
+.menu-utiliseruneinstru:hover{
+    background-color: rgba(187, 182, 182, 0.2);
+    
+}
+
+.menu-apropos:hover{
+    background-color: rgba(187, 182, 182, 0.2);
+}
+
+
+
+#background{
+    position: fixed;
+    background-image: url("fondretrofuturiste.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+}
+
+#big-container{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#drumkit-img-container{
+    border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    z-index: 4;
+    padding: 20px;
+    margin-top: -300px;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(175, 169, 169);
+}
+
+#drumkit-img {
+    transition: 0.4s ease;
+    cursor: pointer;
+    z-index: 3;
+   -webkit-box-shadow: 6px 4px 40px 2px rgba(0,0,0,0.55);
+   -moz-box-shadow: 6px 4px 40px 2px rgba(0,0,0,0.55);
+    box-shadow: 6px 4px 40px 2px rgba(0,0,0,0.55);
+    width: 100%;
+    margin: 0px auto;
+}
+
+#drumkit-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: -5px;
+    z-index: 3;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    align-self: center;
+    transition: 0.6s ease;
+}
+
+#clickme {
+   align-self: center;
+   font-weight: bold;
+   font-size: 18px;
+   margin-top: 15px;
+   color: blanchedalmond;
+}
+
+#titre-drumkit {
+    align-self: center;
+    font-weight: bold;
+    margin-top: 140px;
+    letter-spacing: 2px;
+    font-size: 23px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    padding: 5px;
+}
+
+#liste-drumkit {
+    margin-top: 220px;
+    line-height: 25px;
+    font-size: 17px;
+    font-style: italic;
+}
+
+#drumkit-img:hover {
+    filter: brightness(50%);
+
+}
+
+#drumkit-content:hover {
+    height: 1000px;
+    background-color: rgb(175, 169, 169);
+}
+
+.button {
+    margin-top: 20PX;
+    margin-left: 30px;
+    background-color: rgb(19, 21, 155);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+.button:hover {
+    filter: brightness(150%);
+}
+
+
+
+
+
+@media all and (max-width: 1540px) {
+    #drumkit-content {
+        margin-top: 40px;
+    }
+
+    #drumkit-img-container{
+        margin-top: -200px;
+    }
+}
+
+@media all and (max-width: 1250px) {
+    #drumkit-content {
+        margin-top: 40px;
+    }
+    #drumkit-img-container{
+        margin-top: -200px;
+    }
+    #background {
+        background-size: 120%;
+    }
+}
+
+
+     
+     @media all and (max-width: 820px){
+         /*PHONE*/
+       #background {
+        position: fixed;
+        background-image: url("fondretrofuturiste.jpg");
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-size: 1000px 1000px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+       }
+       #drumkit-content {
+        margin-top: 80px;
+        }
+        #drumkit-img-container{
+        margin-top: -130px;
+        }
+       nav {
+         height: 60px;
+       }
+       .menu-apropos{
+         font-size: 16px;
+         padding: 23px 10px;
+        }
+        .menu-utiliseruneinstru{
+         padding: 23px 10px;
+         font-size: 16px;
+        }
+        .menu-drumkit{
+        padding: 23px 10px;
+        font-size: 16px;
+        }
+        #logo {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        }
+        #ytb {
+         width: 70px;
+         height: 60px;
+         margin-top: 5px;
+         background-position: 8px 16px;
+         background-size: 55px;
+        }
+        #twitch {
+       background-position: 14px;
+       margin-top: 5px;
+       margin-left: 70px;
+       width: 65px;
+       height: 60px;
+       background-size: 40px;
+        }
+        .button {
+            margin-top: 0PX;
+            margin-left: 30px;
+            padding: 12px 30px;
+            cursor: pointer;
+
+        }
+}
+
+

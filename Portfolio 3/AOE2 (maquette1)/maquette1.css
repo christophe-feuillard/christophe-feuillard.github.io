@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************************************************************************/
+
+
+.big_container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(53, 53, 56);
+    overflow-y: hidden;
+   
+  
+}
+.nav_des_civ {
+   
+   background-color: rgb(24, 39, 129);
+   height: 100vh;
+   overflow-y: scroll; 
+   width: 150px;
+
+}
+
+
+
+
+.forme {
+     position: relative;
+     background-color: rgb(13, 16, 41);
+     height: 110px;
+     width: 110px;
+     margin-top: 10px;
+     margin-left: 10px;
+     display: flex;
+     flex-wrap: nowrap;
+     flex-direction: row;
+     transition: 0.7s ease-out;
+     border-radius: 5px;
+     overflow: hidden;
+}
+
+#return_button {
+    transition: 0.3s;
+    position: absolute;
+    left: 150%;
+}
+
+#return_button:hover {
+    color:rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+
+#aztecs, #berbers, #britons, #bulgarians, #burgundians, #burmese, #byzantines {
+    position: absolute;
+    margin-left: 4.5px;
+    margin-top: 5px;
+    background-image: url("imgciv/aztecs.png"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+ 
+    width: 100px;
+    height: 100px;
+   filter: grayscale(100%);
+   transition: 0.5s ease;
+   position: absolute;
+   cursor: pointer;
+}
+
+#berbers {
+    background-image: url("imgciv/berbers.png"); 
+}
+#britons {
+    background-image: url("imgciv/britons.png"); 
+}
+#bulgarians {
+    background-image: url("imgciv/bulgarians.png"); 
+}
+#burgundians {
+    background-image: url("imgciv/burgundians.png"); 
+}
+#burmese {
+    background-image: url("imgciv/burmese.png"); 
+}
+#byzantines {
+    background-image: url("imgciv/byzantines.png"); 
+}
+
+
+#aztecs:hover,
+#berbers:hover,
+#britons:hover,
+#bulgarians:hover,
+#burgundians:hover,
+#burmese:hover,
+#byzantines:hover  {
+    filter: grayscale(0%);
+   background-color: rgb(228, 228, 228);
+    
+}
+
+.civname {
+    
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+     margin-left: 200px;
+     margin-top: 30px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    }
+
+
+.type_de_civ {
+    color: rgb(228, 228, 228);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+    
+     
+
+.civ_descriptif {
+    color: rgb(228, 228, 228);
+    margin-top: 120px;
+    margin-left: 10px;
+   text-align: left;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+.code_couleur_atk {
+    color: rgb(184, 18, 18);  
+}
+.code_couleur_gold {
+    color: goldenrod;
+}
+.code_couleur_pv {
+    color: rgb(45, 185, 26);
+}
+
+
+
+
+
+
+
+
+    
+
+    
