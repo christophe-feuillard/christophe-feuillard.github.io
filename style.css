@@ -50,6 +50,52 @@ table {
 
 /**********************************************/
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+   
+  }
+
+
+
+
+
+
 body::-webkit-scrollbar 
 {
     display: none;
@@ -108,23 +154,43 @@ body::-webkit-scrollbar
 
 .big_container_2 {
     width: 100%;
-    height: 367.2px;
+    height: 120px;
     z-index: 1; 
     display: flex; 
     flex-direction: column;
-    
 }
 
+.div_contact {
+    width: 100%;
+    height: 120px;
+    opacity: 1;
+   background-color: rgb(187, 187, 187);
+    z-index: 2; 
+    display: flex;
+    justify-content: center;
+}
+
+#spannumtel {
+    background-color: rgb(187, 187, 187);
+    resize: none;
+    border: none;
+    width: 280px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 30px;
+    text-align: center;
+  
+}
 
 
 
 header {
     width: 100%;
-    height: 18vh;
+    height: 200px;
     z-index: 2; 
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(27, 27, 27);
+    background-color: rgba(0, 0, 0, 0.486);
 }
 
 header span {
@@ -136,9 +202,9 @@ header span {
 }
 
 .photo {
-    background-image: url("img/logoavecfond.png");
+    background-image: url("img/IMG_7443.jpg");
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-size: 100%;
     width: 150px;
     height: 155.24px;
     background-position: -0px;
@@ -159,9 +225,9 @@ header span {
 }
 
 .aproposdemoi {  
-    margin-top: 100px;
+    margin-top: 0px;
   width: 100%;
-  height:  110.16px;
+  height:  90px;
   background-color: rgb(27, 27, 27);
   z-index: 5; 
   display: flex;
@@ -188,14 +254,11 @@ header span {
 }
 
 
-
 .aproposspan {  
      font-size: 40px;
     color: rgb(219, 219, 219);
     align-self: center;
     letter-spacing: 2px;  
-  
- 
 }
 
 #boutoncopy {
@@ -203,24 +266,6 @@ header span {
   
 }
 
-main {
-    width: 100%;
-    height: 371.3px;
-    opacity: 1;
-   background-color: rgb(187, 187, 187);
-    z-index: 2; 
-  
-}
-
-.p_main {
-    text-align: center;
-    font-size: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 20px;
-    line-height: 43px;
-   
-}
 
 .span_p_main {
     font-weight: bolder;
@@ -232,15 +277,36 @@ main {
     color: #0a4985;
 }
 
+main {
+    width: 85%;
+    height: 690px;
+    opacity: 1;
+   background-color: rgb(27, 27, 27);
+    z-index: 2; 
+}
+.p_main {
+    opacity: 1;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    line-height: 60px;
+    color: aliceblue;
+}
+.container_nav_div {
+    display: flex;
+    width: 100%;
+}
 
 .nav {
-    margin-top: 60px;
-    width: 100%;
-    height: 10vh;
-    z-index: 4;
-    background-color: rgba(168, 39, 39, 0);
+    width: 15%;
+    height: 690px;
+    z-index: 1;
+    background-color: rgba(27, 27, 27, 0.671);
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
 }
 
 .icon{
@@ -298,34 +364,19 @@ filter: saturate(200%);
 
 }
 
-.div_contact {
-    width: 100%;
-    height: 293.76px;
-    opacity: 1;
-   background-color: rgb(187, 187, 187);
-    z-index: 2; 
-    display: flex;
-    justify-content: center;
-    
-}
+
 
 #emailspan {
     background-color: rgb(187, 187, 187);
     resize: none;
     border: none;
-    width: 850px;
-    height: 50px;
+    width: 670px;
+    height: 33px;
     overflow: hidden;
+    font-size: 30px;
 }
 
-#spannumtel {
-    background-color: rgb(187, 187, 187);
-    resize: none;
-    border: none;
-    width: 350px;
-    height: 50px;
-    overflow: hidden;
-}
+
 
 
 .smartphone {
@@ -361,9 +412,9 @@ filter: saturate(200%);
             }
 
  .big_container_3 {
-  
+   
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     z-index: 1; 
     display: flex; 
     flex-direction: column;    
@@ -414,22 +465,63 @@ filter: saturate(200%);
 }    
 
 .projet_section {
+    margin-top: 20px;
     display: flex;
     width: 100%;
-    height: 50vh;
-    background-color: rgba(187, 187, 187, 0.301);
-    z-index: 3; 
+    height: 350px;
+    background-color: rgba(12, 43, 143, 0);
+    z-index: 3;  
+   
+}
+.listes_projets {
+    display: flex;
     justify-content: space-around;
- 
+    background-color: rgba(28, 33, 107, 0.685);
+    height: 350px;
+    width: 94%;
+    background: rgba(9, 8, 74, 0.356);
+    background: linear-gradient(90deg, rgba(9, 8, 74, 0.281) 0%, rgba(5, 4, 93, 0.349) 81%, rgba(5, 4, 93, 0.219)rgba(5, 4, 93, 0.514)4,93,1) 100%);
+}
+
+.date_projet_container {
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    display: flex;
+    justify-content: space-around;
+    width: 6%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(88, 88, 88);
+    height: 350px;
+}
+
+.date_projet, .date_projet_an {
+writing-mode: vertical-rl;
+text-orientation: upright;
+font-weight: bolder;
+font-size: 22px;
+letter-spacing: 7px;
+text-align: center;
+color: rgb(224, 224, 224);
+}
+
+.date_projet_an {
+    opacity: 0.7;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(202, 202, 202);
+    letter-spacing: 5px;
+
 }
 
 
 
 .link_vers_site {
+    opacity: 1;
     cursor: pointer;
     align-self: center;
-    width: 20%;
-    height: 30vh;
+    width: 30%;
+    height: 300px;
     background-color: rgb(15, 32, 128);
     box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
     display: flex;
@@ -443,7 +535,7 @@ filter: saturate(200%);
 
 .link_vers_site:hover {
     width: 25%;
-    height: 40vh;
+    height: 270px;
     filter: grayscale(0%);
     opacity: 1;
 }
@@ -451,7 +543,7 @@ filter: saturate(200%);
 
 .div_section:hover {
     width: 45%;
-    height: 90vh;
+    height: 80vh;
     filter: grayscale(0%);
     opacity: 1;
 }
@@ -494,6 +586,8 @@ filter: saturate(200%);
 }
 
 
+
+
 .projet2 {
     background-image: url("img/projet2_1.jpg");
 
@@ -518,429 +612,21 @@ filter: saturate(200%);
     background-image: url("img/projet4_2.jpg");
 
 }
+.projet5_1 {
+    background-image: url("img/projet5_1.jpg");
 
+}
 
+@media screen and (min-height: 700px) and (max-height: 800px) {
 
-/****************************************************************************/
-
-@media screen and (max-width: 1700px) {
     main {
-    overflow-y: scroll;
+        height: 475px;
     }
-/********************************************************/
-}
-@media screen and (max-width: 1600px) {
-
-   .icon{
-    width: 6vw;
-    height: 6vw;
-    border-radius: 8vw;
-    }
-   
-
-}
-
-@media screen and (max-width: 1400px) {
-    .icon_{
-        display: none;
-        }
-    .big_container_2 {
-        height: 400px;      
-    }
-
-    .div_contact {
-        height: 350px;
-        flex-direction: column;
-    }
-    .div_section {
-        width: 95%;
-        height: 95vh;
-        filter: grayscale(0%);
-    }
-
-    
-   .div_section:hover {
-    width: 95%;
-    height: 95vh;
-    filter: grayscale(0%);
-    opacity: 1;
-}
-
-
-
- }
-
-
-
-/********************************************/
-
-@media screen and (max-width: 1200px) {
-    .link_vers_site {
-        cursor: pointer;
-        align-self: center;
-        width: 30%;
-        height: 40vh;
-        background-color: rgb(15, 32, 128);
-        box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around ;
-        border-radius: 20px;
-        transition: 0.8s ease;
-        filter: grayscale(100%);
-    
-    }
-    .icon{
-        width: 9vw;
-        height: 9vw;
-        border-radius: 9vw;
-        }
-        .ptitebarre {
-          display: none;
-        }
-
-   .titre_section {
-       font-size: 15px;
-   }
-
-
-}
-
-/******************************************************/
-
-@media screen and (max-width: 870px) {
-    .link_vers_site:hover {
-        width: 30%;
-        height: 25vh;
-        filter: grayscale(0%);
-        opacity: 1;
-    }
-    .link_vers_site {
-        cursor: pointer;
-        align-self: center;
-        width: 30%;
-        height: 20vh;
-        background-color: rgb(15, 32, 128);
-        box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around ;
-        border-radius: 20px;
-        transition: 0.8s ease;
-        filter: grayscale(100%);
-    
-    }
-    .projet_section {
-        display: flex;
-        width: 100%;
-        height: 30vh;
-        background-color: rgba(187, 187, 187, 0.301);
-        z-index: 3; 
-        justify-content: space-around;
-     
-    }
-    .big_container_3 {
-  
-        width: 100%;
-        height: 60vh;
-        z-index: 1; 
-        display: flex; 
-        flex-direction: column;    
-        
-        background-image: url("img/115641.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment:fixed;
-    }   
-    .big_container_2 {
-        width: 100%;
-        height: 250px;
-        z-index: 1; 
-        display: flex; 
-        flex-direction: column;
-        
-    }
-    
-    #boutoncopy {
-        color: rgb(255, 255, 255);
-     
-    }
-    .div_contact {
-        width: 100%;
-        height: 250px;
-        opacity: 1;
-       background-color: rgb(187, 187, 187);
-        z-index: 2; 
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        
-    }
-
-    #spannumtel {
-        background-color: rgb(187, 187, 187);
-        resize: none;
-        border: none;
-        width: 30vw;
-        height: 15vh;
-        overflow: hidden;
-        font-size: 4vw;
-    }
-
-    #emailspan {
-        background-color: rgb(187, 187, 187);
-        resize: none;
-        border: none;
-        width: 30vw;
-        height: 15vh;
-        overflow: hidden;
-        font-size: 4vw;
-        margin-left: 0px;
-    }
-    .icon{
-        align-self: center;
-        width: 12vw;
-        height: 12vw;
-        border-radius: 10vw;
-        }
-
-    .span_p_main {
-            font-size: 2.8vw;     
-        }
-    .p_main {
-         text-align: initial;
-        font-size: 2.4vw;
-        padding-left: 10px;
-        padding-right: 10px;
-        line-height: 40px;
-    }
-    main {
-        height: 550px;    
-    }
-    .aproposdemoi {  
-        margin-top: 0px;
-    }
-    header span {
-        display: none;
-       }
     .nav {
-        margin-top: 25px;
-    }
-
-}
-
-
-@media screen and (max-width: 650px) {
-    #spannumtel {
-        background-color: rgb(187, 187, 187);
-        resize: none;
-        border: none;
-        width: 30vw;
-        height: 15vh;
-        overflow: hidden;
-        font-size: 4.5vw;
-    }
-
-    #emailspan {
-        background-color: rgb(187, 187, 187);
-        resize: none;
-        border: none;
-        width: 30vw;
-        height: 15vh;
-        overflow: hidden;
-        font-size: 4.5vw;
-        margin-left: 0px;
-    }
-    
-    .photo {
-        background-size: 100%;
-        width: 120px;
-        height: 150px;
-        border-radius: 30px; 
-        box-shadow:0px 0px 0px 0px rgba(0,0,0,0.71);
-    } 
-    .aproposdemoi {  
-     margin-top: 0px;
-      height:  90px;
-    }
-    header {
-        height: 14vh;
-    }
-    .span_p_main {
-        font-size: 3.1vw;
-    }
-.p_main {
-     text-align: initial;
-    font-size: 2.8vw;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 40px;
-}
-main {
-    height: 600px;    
-}
-
-
-
-}
-
-@media screen and (max-width: 500px) { 
-    .link_vers_site {
-        cursor: pointer;
-        align-self: center;
-        width: 40%;
-        height: 30vh;
-        background-color: rgb(15, 32, 128);
-        box-shadow: inset -7px -7px 50px 3px rgba(0, 0, 0, 0.486);
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around ;
-        border-radius: 0px;
-        transition: 0.8s ease;
-        filter: grayscale(100%);
-    
-    }
-    .projet_section {
-        display: flex;
-        width: 100%;
-        height: 60vh;
-        background-color: rgba(187, 187, 187, 0.301);
-        z-index: 3; 
-        justify-content: space-around;
-     
-    }
-    .big_container_3 {
-  
-        width: 100%;
-        height: 60vh;
-        z-index: 1; 
-        display: flex; 
-        flex-direction: column;    
-        
-        background-image: url("img/115641.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment:fixed;
-    }   
-    #projet_ {
-        height: 60px;
-    }
-
-    .titre_section {
-        font-size: 12px;
-    }
-    #spannumtel {
-        background-color: rgb(187, 187, 187);
-        resize: none;
-        border: none;
-        width: 30vw;
-        height: 15vh;
-        overflow: hidden;
-        font-size: 5vw;
-    }
-
-    #emailspan {
-        background-color: rgb(187, 187, 187);
-        resize: none;
-        border: none;
-        width: 30vw;
-        height: 15vh;
-        overflow: hidden;
-        font-size: 5vw;
-        margin-left: 0px;
-    }
-    .photo {
-        width: 100px;
-        height: 150px;
-    } 
-    main {
-        height: 650px;    
-    }
-    .aproposdemoi {  
-        margin-top: 0px;
-      height:  80px;
-    }
-    header {
-        height: 12vh;
-    }
-    .aproposspan {  
-        font-size: 30px;   
-   }
-
-    .span_p_main {
-        font-size: 3.8vw;
-    }
-.p_main {
-     text-align: center;
-    font-size: 3.8vw;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 40px;
-}
-.icon{
-    align-self: center;
-    width: 16vw;
-    height: 16vw;
-    border-radius: 10vw;
-    }
-
-    .big_container_2 {
-        width: 100%;
-        height: 200px;
-        z-index: 1; 
-        display: flex; 
-        flex-direction: column;
-        
-    }
-    
-    .div_contact {
-        width: 100%;
-        height: 200px;
-        opacity: 1;
-       background-color: rgb(187, 187, 187);
-        z-index: 2; 
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        
-    }
-
-
-}
-
-@media screen and (max-width: 430px) { 
-    #spannumtel {
-        background-color: rgb(187, 187, 187);
-        resize: none;
-        border: none;
-        width: 30vw;
-        height: 15vh;
-        overflow: hidden;
-        font-size: 6vw;
-    }
-
-    #emailspan {
-        background-color: rgb(187, 187, 187);
-        resize: none;
-        border: none;
-        width: 30vw;
-        height: 15vh;
-        overflow: hidden;
-        font-size: 6vw;
-        margin-left: 0px;
+        height: 475px;
     }
     .p_main {
-        text-align: center;
-       font-size: 5vw;
-       padding-left: 10px;
-       padding-right: 10px;
-       line-height: 35px;
-   }
-   .span_p_main {
-    font-size: 5vw;
-}
+        line-height: 45px;
+    }
 
 }
-
-
-
