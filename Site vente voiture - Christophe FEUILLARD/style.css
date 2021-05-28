@@ -1,0 +1,487 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***************************************************************************************/
+
+header {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-attachment: fixed;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: 1s ease;
+}
+
+
+
+.titre_header {
+  text-align: center;
+  background-color: rgba(119, 119, 112, 0);
+  height: 250px;
+  
+}
+
+.sous_titre_header, .paragraphe_header {
+    color: white;
+    line-height: 50px;
+    
+}
+
+.sous_titre_header {
+    font-size: 55px;
+    font-weight: bold;
+    
+}
+
+.paragraphe_header {
+    font-size: 18px;
+}
+
+.container_form {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(94, 94, 35, 0);
+    display: flex;
+}
+
+.container2_form {
+    width: 60%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#formulaire {
+    width: 80%;
+    height: 50px;
+    background-color: rgba(218, 218, 218, 0.781);
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}   
+
+.valider {  
+    width: 25%;
+    height: 50px;
+    background-color: rgba(74, 206, 92, 0.781);
+     border: none;
+     cursor: pointer;
+
+}
+
+.valider2 {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-size: 15px;
+}
+
+.choix {
+    width: 25%;
+    height: 70%;
+    align-self: center;
+}
+
+.milieu_container {
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.section {
+    width: 60%;
+    height: 5vh;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+.septresul {
+    align-self: center;
+         font-size: 25px;
+}
+.sept {
+    font-weight: bold;
+}
+
+#croissant {
+   
+    border-radius: 5px;
+    width: 11%;
+    height: 70%;
+    align-self: center;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e1e1e1+87,e1e1e1+97,f1f1f1+100,f6f6f6+100,f1f1f1+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(225,225,225,1) 87%, rgba(225,225,225,1) 97%, rgba(241,241,241,1) 100%, rgba(246,246,246,1) 100%, rgba(241,241,241,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(225,225,225,1) 87%,rgba(225,225,225,1) 97%,rgba(241,241,241,1) 100%,rgba(246,246,246,1) 100%,rgba(241,241,241,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(225,225,225,1) 87%,rgba(225,225,225,1) 97%,rgba(241,241,241,1) 100%,rgba(246,246,246,1) 100%,rgba(241,241,241,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+
+}
+
+main {
+    width: 60%;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: rgb(22, 202, 37);
+}
+
+.section_de_voiture {
+    width: 100%;
+    height: 20vh;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-bottom:1px solid rgba(134, 134, 134, 0.582) ;
+    
+}
+
+.image_voiture {
+    width: 40%;
+    height: 20vh;
+    background-image: url("vehicule1.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 0px 0px;
+}
+
+.voit2 {
+    background-image: url("vehicule2.png");
+}
+.voit3 {
+    background-image: url("vehicule3.png");
+}
+.voit4 {
+    background-image: url("vehicule4.png");
+}
+
+
+
+.article_voiture {
+    width: 60%;
+    height: 16vh;
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.parajsaispaslenom {
+    line-height: 25px;
+}
+
+.reserve {
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4df5b+0,7cd356+2,4ab551+100 */
+background: rgb(180,223,91); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(180,223,91,1) 0%, rgba(124,211,86,1) 2%, rgba(74,181,81,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(180,223,91,1) 0%,rgba(124,211,86,1) 2%,rgba(74,181,81,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(180,223,91,1) 0%,rgba(124,211,86,1) 2%,rgba(74,181,81,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4df5b', endColorstr='#4ab551',GradientType=0 ); /* IE6-9 */
+
+}
+
+.container_footer {
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    padding-top: 20px;
+    width: 60%;
+    height: 15vh;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.container_footer2 {
+    width: 40%;
+    height: 12vh;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.imagedufooter {
+    width: 30%;
+    height: 20vh;
+    background-image: url("agence.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 0px;
+}
+
+.articledufooter {
+    line-height: 21px;
+    width: 60%;
+    height: 12vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.hamburger{
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:45px;
+    padding:5px 15px 0px 15px;
+    color:#999;
+    border:0;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor: pointer;
+    outline: none;
+    z-index:10;
+    transition: 1s ease;
+  }
+
+
+  .container_burger{
+      position: absolute;
+      top: 0%;
+	width:100%; 
+	background:#ffffff00; 
+	height:60px; 
+	line-height:60px;
+
+}
+
+.paris {
+    font-weight: bold;
+}
+
+/*************************************************/
+
+@media screen and (max-width: 1300px) {
+    .reserve {
+        background-color: rgb(19, 146, 29);
+        color: white;
+        border: none;
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+
+    .image_voiture {
+        width: 40%;
+        height: 20vh;
+        
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0px 0px;
+    }
+
+}
+@media screen and (max-width: 1300px) {
+
+    #croissant {
+        background-color: rgb(211, 211, 211);
+        border-radius: 5px;
+        width: 30%;
+        height: 70%;
+        align-self: center;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .parajsaispaslenom {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .image_voiture {
+        width: 40%;
+        height: 20vh;
+        
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0px 0px;
+    }
+
+    .valider {  
+        width: 100%;
+        height: 50px;
+        background-color: rgba(74, 206, 92, 0.781);
+         border: none;
+         padding: 15px;
+    
+    }
+    .container2_form {
+        width: 60%;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #formulaire {
+        width: 100%;
+        height: 50px;
+        background-color: rgba(218, 218, 218, 0.781);
+        align-self: center;
+        display: flex;
+        justify-content: space-around;
+    }   
+
+}
+
+
+/******************************HAMBURGER**************************************************/
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute;  font-size:12px; padding-left: 20px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+/*************************************************************************************/
+
+
+@media screen and (max-width: 700px) {
+
+    .imagedufooter {
+        width: 30%;
+        height: 20vh;
+        background-image: url("agence.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0px 0px;
+    }
+
+    #croissant {
+        background-color: rgb(211, 211, 211);
+        border-radius: 5px;
+        width: 30%;
+        height: 70%;
+        align-self: center;
+    }
+
+
+    .article_voiture {
+        width: 60%;
+        height: 16vh;
+        background-color: rgb(255, 255, 255);
+        align-self: center;
+        overflow-y: scroll;
+    }
+
+
+    .valider {  
+        width: 100%;
+        height: 50px;
+        background-color: rgba(74, 206, 92, 0.781);
+         border: none;
+         padding: 15px;
+    
+    }
+
+    .container2_form {
+        width: 60%;
+        height: 150px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #formulaire {
+        width: 100%;
+        height: 150px;
+        background-color: rgba(218, 218, 218, 0.781);
+        flex-direction: column;
+        align-self: center;
+        display: flex;
+        justify-content: space-around;
+    }   
+    .choix {
+        width: 90%;
+        height: 40px;
+        align-self: center;
+    }
+
+    .container_form {
+        height: 150px;
+        padding-bottom: 100px;
+    }
+
+
+
+
+}
